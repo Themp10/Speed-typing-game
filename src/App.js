@@ -11,6 +11,17 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentStyle, setCurrentStyle] = useState("current");
 
+
+  const createObject=()=>{
+    let output;
+  for (var i = 0; i < text.length; i++) {
+    var char = text.charAt(i);
+    output[char] = "";
+  }
+    return output;
+  }
+
+
   const checkLetter=()=>{
     setCurrentIndex(prevIndex=> prevIndex + 1)
     
